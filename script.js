@@ -7,7 +7,7 @@ const cityHumidity=document.querySelector('.city-humidity');
 const cityFeelsLikeTemp=document.querySelector('.city-feels-like-temperature');
 const cityWind=document.querySelector('.city-wind');
 async function logTemperature(cityName) {
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=1986480656ec490d950204923202611&q=${cityName}`);
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=1986480656ec490d950204923202611&q=${cityName}`);
     if (response.status === 400) {
         throw console.error('what the fuck happened');
     }
