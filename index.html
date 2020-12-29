@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html> 
-    <head>
-        <link rel="stylesheet" href="style/style.css">
-        <meta charset="utf-8">
-        <title>My weather forecast application</title>
-    </head>
-    <body> 
-        
-    </body>
-    <script src="./script.js"></script>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="utf-8">
+    <title>My weather forecast application</title>
+</head>
+
+<body>
+    <div class="complete-body">
+        <div class="weather-card">
+            <h1 class="city-country-name"></h1>
+            <p class="date-time"></p>
+            <h3 class="city-temperature"></h3>
+            <h3 class="city-condition"></h3>
+            <div class="feels-like-humidity">
+                <h3 class="city-feels-like-temperature"></h3>
+                <h3 class="city-humidity"></h3>
+            </div>
+            <h3 class="city-wind"></h3>
+        </div>
+        <div class="search-card">
+            <label for="enter-city-name">Enter City Name</label>
+            <br>
+            <input type="text" id="enter-city-name">        
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
 </html>
